@@ -1,2 +1,4 @@
 scipy
 wordcloud
+numpy
+mathplotlib
