@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 from tools import *
-from scipy.misc import imsave
+import imageio
 from wordcloud import WordCloud
 
 name = sys.argv[1]
@@ -39,4 +39,4 @@ if selected_chat:
 
     wc = WordCloud(max_font_size=250, width=1920, height=1080, max_words=1000)
     wc.generate_from_frequencies(difference)
-    imsave(name + "-diff.png", wc)
+    imageio.imwrite(name + "-diff.png", wc)

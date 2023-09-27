@@ -1,2 +1,3 @@
 *.pyc
-result.json
+*.png
+*.json

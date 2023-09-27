@@ -45,7 +45,7 @@ class Conversation:
             if filter(message):
                 if type(message['text']) == str:
                     text = message['text'].lower()
-                    for char in """,!.…/"'()*?=-–;:""":
+                    for char in """,!.…/"'()*?=-–;:^""":
                         text = text.replace(char, " ")
                     blocks = text.split(' ') # blocks might contain multiple words, sperated by \n
                     for block in blocks:
